@@ -1,0 +1,26 @@
+{
+    "main":"index.html",
+    "version": "1.0.0",
+    "preload": "index.js",
+    "name": "cssGridGenerator",
+    "description": "grid布局生成器",
+    "features": [
+        {
+            "code": "cssGridGenerator",
+            "explain": "grid布局生成器",
+            "cmds": [
+                "cssGridGenerator",
+                "grid"
+            ]
+        }
+    ],
+    "logo": "./images/logo.png",
+    "platform": [
+        "win32",
+        "darwin",
+        "linux"
+    ],
+    "pluginSetting": {
+        "single": true
+    }
+}
