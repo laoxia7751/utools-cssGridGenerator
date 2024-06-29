@@ -1,7 +1,6 @@
 {
-  "main": "plugins/index.html",
+  "main": "index.html",
   "version": "1.0.0",
-  "preload": "index.js",
   "name": "cssGridGenerator",
   "description": "grid布局生成器",
   "features": [

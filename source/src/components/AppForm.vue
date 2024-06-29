@@ -56,22 +56,33 @@
         <app-code/>
       </div>
     </app-modal>
+
+    <p class="wat" @click="showExplainModal = true">{{ $t("form.project") }}</p>
+    <app-modal v-if="showExplainModal" @close="showExplainModal = false">
+      <h3 slot="header">{{ $t("modal.header.what") }}</h3>
+      <div slot="body">
+        <app-explain/>
+      </div>
+    </app-modal>
   </aside>
 </template>
 
 <script>
+import AppExplain from "./AppExplain.vue";
 import AppModal from "./AppModal.vue";
 import AppCode from "./AppCode.vue";
 import { mapState } from "vuex";
 
 export default {
   components: {
+    AppExplain,
     AppModal,
     AppCode
   },
   data() {
     return {
-      showCodeModal: false
+      showCodeModal: false,
+      showExplainModal: false
     };
   },
   computed: {
